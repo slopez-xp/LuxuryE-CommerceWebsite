@@ -56,7 +56,7 @@ export function Footer() {
             </a>
 
             <a
-              href="https://www.youtube.com/user/Rolex"
+              href="https://www.youtube.com/@ROLEX"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Rolex on YouTube"
