@@ -82,4 +82,4 @@ Note: this codebase currently has an `assests/` folder name in some files — co
 - Built with: React, Vite, Tailwind CSS, lucide-react (icons)
 
 ## License
-- MIT (or change to your preferred license)
+- MIT
