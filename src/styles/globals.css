@@ -1,0 +1,130 @@
+/* Tailwind CSS Directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Luxury Gold Palette */
+  --rolex-gold: #a37e2c;
+  --rolex-gold-light: #c5a85f;
+  --rolex-gold-dark: #8a6a24;
+  --rolex-gold-glow: rgba(163, 126, 44, 0.3);
+  
+  /* ROLEX GREEN CONSTANT */
+  --rolex-green: #006039;
+  --rolex-green-light: #008050;
+  --rolex-green-dark: #004028;
+  --rolex-green-glow: rgba(0, 96, 57, 0.3);
+  
+  /* Neutral Palette */
+  --black-pure: #000000;
+  --black-soft: #0a0a0a;
+  --black-elevated: #1a1a1a;
+  --gray-dark: #2a2a2a;
+  --gray-medium: #666666;
+  --gray-light: #999999;
+  --white-pure: #ffffff;
+  --white-soft: #f5f5f5;
+  --white-muted: #cccccc;
+  
+  /* Semantic Colors */
+  --success: #4a9b50;
+  --error: #c94a4a;
+  --warning: #d4af37;
+  --info: #5a8fa8;
+  
+  /* Typography */
+  --font-display: 'Playfair Display', 'Georgia', serif;
+  --font-body: -apple-system, 'Helvetica Neue', 'Arial', sans-serif;
+  --font-mono: 'SF Mono', 'Monaco', 'Courier New', monospace;
+  
+  /* Spacing Base Unit */
+  --space-base: 8px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
+  --shadow-gold: 0 0 20px rgba(163, 126, 44, 0.3);
+  
+  /* Transitions */
+  --transition-fast: 150ms ease-out;
+  --transition-base: 300ms ease-out;
+  --transition-slow: 500ms ease-out;
+  
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+  
+  /* Gradients */
+  --gradient-gold: linear-gradient(135deg, #d4af37 0%, #a37e2c 50%, #c5a85f 100%);
+  --gradient-green: linear-gradient(135deg, #008050 0%, #006039 50%, #004028 100%);
+  --gradient-dark: linear-gradient(180deg, #000000 0%, #1a1a1a 50%, #000000 100%);
+  --gradient-overlay: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--black-pure);
+  color: var(--white-pure);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Utility Classes */
+.gold-gradient {
+  background: var(--gradient-gold);
+}
+
+.dark-gradient {
+  background: var(--gradient-dark);
+}
+
+.overlay-gradient {
+  background: var(--gradient-overlay);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--black-pure);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--rolex-gold);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--rolex-gold-light);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--rolex-gold);
+  outline-offset: 2px;
+}
+
+/* Add/update this CSS rule in your global stylesheet */
+.modal-open {
+    /* Prevents background content from scrolling */
+    overflow-y: scroll !important; 
+    
+    /* Makes the body position fixed, stopping the visible scroll jump */
+    position: fixed !important; 
+    
+    /* Ensures the body spans the full viewport width */
+    width: 100%; 
+}
